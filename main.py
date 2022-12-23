@@ -11,12 +11,12 @@ np.set_printoptions(precision=10, threshold=20000000, linewidth=20000000)
 ############################################################################################################################################################
 #TODO control
 init, second, third, forth, last = 5932, 30283, 42336, 54402, 66494
-undeform = init
-deform = second
-undeformed_cood = np.loadtxt("cood0_{}.txt".format(undeform))
-deformed_cood = np.loadtxt("cood0_{}.txt".format(deform))
-spin = np.loadtxt("angular_vel0_{}.txt".format(deform))
-rad = np.loadtxt("radius.txt")
+undeform = init # input
+deform = second # input
+undeformed_cood = np.loadtxt("data/cood0_{}.txt".format(undeform))
+deformed_cood = np.loadtxt("data/cood0_{}.txt".format(deform))
+spin = np.loadtxt("data/angular_vel0_{}.txt".format(deform))
+rad = np.loadtxt("data/radius.txt")
 ############################################################################################################################################################
 p_num = len(undeformed_cood)
 disp = deformed_cood - undeformed_cood
