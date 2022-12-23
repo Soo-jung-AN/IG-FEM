@@ -13,10 +13,10 @@ np.set_printoptions(precision=10, threshold=20000000, linewidth=20000000)
 init, second, third, forth, last = 5932, 30283, 42336, 54402, 66494
 undeform = init # input
 deform = second # input
-undeformed_cood = np.loadtxt("data/cood0_{}.txt".format(undeform))
-deformed_cood = np.loadtxt("data/cood0_{}.txt".format(deform))
-spin = np.loadtxt("data/angular_vel0_{}.txt".format(deform))
-rad = np.loadtxt("data/radius.txt")
+undeformed_cood = np.loadtxt("IG-FEM/data/cood0_{}.txt".format(undeform))
+deformed_cood = np.loadtxt("IG-FEM/data/cood0_{}.txt".format(deform))
+spin = np.loadtxt("IG-FEM/data/angular_vel0_{}.txt".format(deform))
+rad = np.loadtxt("IG-FEM/data/radius.txt")
 ############################################################################################################################################################
 p_num = len(undeformed_cood)
 disp = deformed_cood - undeformed_cood
